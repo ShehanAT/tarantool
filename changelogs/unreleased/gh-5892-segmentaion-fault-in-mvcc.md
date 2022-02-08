@@ -1,3 +1,3 @@
 ## bugfix/core
 
-* Fixed segmentation fault with mvcc when entire space was updated concurrently (gh-5892)
+* Fixed segmentation fault with MVCC when an entire space was updated concurrently (gh-5892).
