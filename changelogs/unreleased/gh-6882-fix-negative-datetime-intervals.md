@@ -10,4 +10,4 @@
 ...
 ```
    i.e. 2 immediately called `date.now()` produce very close values, whose
-   difference should be close to 0, not 1 second. (gh-6882);
+   difference should be close to 0, not 1 second (gh-6882).
