@@ -21,6 +21,6 @@ jobs:
           to: ${{ secrets.PERF_EMAIL_RECIPIENTS }}
           from: ${{ secrets.PERF_EMAIL_SENDER }}
           #body: Build job of ${{ github.repository }} completed successfully!
-          html_body: file:///tmp/result_table.txt
+          html_body: file:///tmp/result_table.html
           ignore_cert: false
 #          convert_markdown: true
