@@ -12,14 +12,14 @@ jobs:
       - name: Send email
         uses: dawidd6/action-send-mail@v3.6.0
         with:
-          server_address: ${{secrets.EMAIL_SERVER}}
+          server_address: ${{ secrets.PERF_EMAIL_SERVER }}
           server_port: 465
           secure: true
-          username: ${{secrets.EMAIL_USERNAME}}
-          password: ${{secrets.EMAIL_PASSWORD}}
+          username: ${{ secrets.PERF_EMAIL_USERNAME }}
+          password: ${{ secrets.PERF_EMAIL_PASSWORD }}
           subject: Tarantool Nightly Perf Testing
-          to: ${{secrets.EMAIL_RECIPIENTS}}
-          from: Tarantool Perf <noreply@tarantool.io>
-          body: Build job of ${{github.repository}} completed successfully!
+          to: ${{ secrets.PERF_EMAIL_RECIPIENTS }}
+          from: ${{ secrets.PERF_EMAIL_SENDER }}
+          body: Build job of ${{ github.repository }} completed successfully!
           ignore_cert: false
           convert_markdown: true
