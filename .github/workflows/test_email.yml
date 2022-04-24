@@ -6,7 +6,7 @@ on:
 
 jobs:
   test_mail:
-    runs-on: ubuntu-20.04-self-hosted
+    runs-on: ubuntu-20.04-self-hosted-manual
 
     steps:
       - name: Send email
@@ -20,6 +20,7 @@ jobs:
           subject: Tarantool Nightly Perf Testing
           to: ${{ secrets.PERF_EMAIL_RECIPIENTS }}
           from: ${{ secrets.PERF_EMAIL_SENDER }}
-          body: Build job of ${{ github.repository }} completed successfully!
+          #body: Build job of ${{ github.repository }} completed successfully!
+          html_body: file:///tmp/result_table.txt
           ignore_cert: false
           convert_markdown: true
