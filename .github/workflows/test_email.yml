@@ -19,7 +19,7 @@ jobs:
           password: ${{secrets.EMAIL_PASSWORD}}
           subject: Tarantool Nightly Perf Testing
           to: ${{secrets.EMAIL_RECIPIENTS}}
-          from: noreply@tarantool.io
+          from: Tarantool Perf <perf@tarantool.io>
           body: Build job of ${{github.repository}} completed successfully!
 #          ignore_cert: false
 #          convert_markdown: true
