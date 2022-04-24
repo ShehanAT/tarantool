@@ -17,7 +17,7 @@ jobs:
           secure: true
           username: ${{ secrets.PERF_EMAIL_USERNAME }}
           password: ${{ secrets.PERF_EMAIL_PASSWORD }}
-          subject: Tarantool Nightly Perf Testing
+          subject: 'Tarantool Nightly Perf Testing. Branch: master. Build: 2.10.0-beta2-299-g054a339ab. Test: sysbench'
           to: ${{ secrets.PERF_EMAIL_RECIPIENTS }}
           from: ${{ secrets.PERF_EMAIL_SENDER }}
           #body: Build job of ${{ github.repository }} completed successfully!
