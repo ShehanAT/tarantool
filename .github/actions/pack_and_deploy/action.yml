@@ -34,4 +34,5 @@ runs:
               ;;
           esac
         fi
+        REPO_TYPE=release make -f .gitlab.mk deploy
       shell: bash
